@@ -76,8 +76,38 @@
                 <!-- Form -->
                 <section>
                     <form>
-                        <label>Nama: </label>
-                        <input >
+                        <table>
+                            <tr class="input-form" id="nama">
+                                 <td>Nama</td>
+                                <td>:</td>
+                                <td>
+                                    <input type="text" name="nama" id="nama" placeholder="Nama" style="width: 433px;">
+                                 </td>
+                            </tr>
+                            <tr class="input-form" id="tgl_lahir">
+                                <td>Tanggal Lahir</td>
+                                <td>:</td>
+                                <td>
+                                    <input type="date" name="tgl_lahir" id="tgl_lahir" placeholder="dd/mm/year" style="width: 435px;">
+                                </td>
+                            </tr>
+                            <tr class="input-form" id="jkel">
+                                <td>Jenis Kelamin</td>
+                                <td>:</td>
+                                <td>
+                                    <input type="radio" name="jkel" id="laki-laki" class="laki-laki">Laki-laki
+                                    <input type="radio" name="jkel" id="perempuan" class="perempuan">Perempuan
+                                </td>
+                            </tr>
+                            <tr class="input-form" id="pesan">
+                                <td>Pesan</td>
+                                <td>:</td>
+                                <td>
+                                    <textarea type="text" name="pesan" id="pesan" placeholder="Pesan" style="width: 432px; height: 100px; resize: none;" ></textarea>
+                                </td>
+                            </tr>
+                        </table>
+                        <input type="submit" value="Submit" style="width: 99%;">
                     </form>
                 </section>
 
