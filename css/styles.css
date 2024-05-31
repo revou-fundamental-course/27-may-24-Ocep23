@@ -1,1 +1,49 @@
 /* Ini Css */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+nav > section {
+    display: flex;
+    align-items: center;
+}
+.logo-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav-item{
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 8px;
+    color: black;
+    text-decoration: none;
+}
+hr {
+    margin: 0;
+}
+.section-container {
+    background-color: bisque;
+}
+.banner-container {
+    height: 328px;
+    border: 1px solid black;
+}
+.facility-list {
+    display: flex;
+    justify-content: space-around;
+}
+.form-result {
+    height: 100px;
+    border: 1px solid black;
+}
+.section-message-us {
+    display: flex;
+}
+.result-container {
+    width: 100%;
+}
