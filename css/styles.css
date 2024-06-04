@@ -1,12 +1,14 @@
 /* Ini Css */
-
+body {
+    margin: 0;
+    border: 2px solid black;
+}
 nav {
     display: flex;
     justify-content: space-between;
-}
-nav > section {
-    display: flex;
     align-items: center;
+    border: 1px solid black;
+    margin: 0;
 }
 .logo-icon {
     height: 50px;
@@ -15,34 +17,77 @@ nav > section {
     background-image: url(https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/a32f81155cd0d4f16d36aef74f7d2644.png);
     background-size: cover;
     background-repeat: no-repeat;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 7px;
+    margin-bottom: 7px;
 }
-.nav-item{
-    border: 1px solid black;
-    padding: 8px;
-    border-radius: 8px;
+nav ul {
+    list-style-type: none; 
+    margin: 2px;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    overflow: hidden;
+    background-color: white; 
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+  nav li {
+    float: left; 
+}
+  nav li a {
+    display: flex;
     color: black;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     text-decoration: none;
+    border: 1px solid black;
+}
+  nav li a:hover {
+    background-color: #111;
 }
 hr {
     margin: 0;
+    margin-top: 10px;
+}
+header {
+    margin-left: 120px;
+    margin-bottom: 40px;
+}
+header > h1{
+    margin-bottom: -10px;
 }
 .section-container {
-    background-color: bisque;
+    background-color: white;
+    margin-top: 50px;
 }
 .banner-container {
-    height: 328px;
-    border: 1px solid black;
+    width: 1366px;
+    height: 578px;
 }
 .facility-list {
     display: flex;
     justify-content: space-around;
 }
+form {
+    padding-left: 150px;
+    height: 400px;
+}
 .form-result {
-    height: 100px;
+    height: 200px;
     border: 1px solid black;
+    margin-left: 200px; 
+    margin-right: 80px;
+    padding: 15px;
 }
 .section-message-us {
     display: flex;
+    padding-top: 20px;
 }
 .result-container {
     width: 100%;

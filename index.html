@@ -9,27 +9,26 @@
 
 <body>
     <nav>
-        <div class="logo-icon"></div>
+        <div class="logo-icon">
 
-        <section>
-            <a class="nav-item" href="#home">Home</a>
-            <a class="nav-item" href="#facilitation">Our Profile</a>
-            <a class="nav-item" href="#">Achievement</a>
-            <a class="nav-item" href="#message-us">Message Us</a>
-        </section>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#facilitation">Our Profile</a></li>
+            <li><a href="#">Achievement</a></li>
+            <li><a href="#message-us">Message Us</a></li>
+        </ul>
     </nav>
-
-    <hr>
 
     <section class="section-container">
         <!-- Home -->
         <section id="home">
             <header>
-                <h1> Hi Joseph, Welcome To Website</h1>
+                <h1> Hi <span id="name">Joseph</span>,  Welcome To Website</h1>
+                <p>ini adalah website latihan pertama...</p>
             </header>
 
             <article>
-                <p>ini adalah website latihan pertama...</p>
                 <div class="banner-container">
 
                 </div>
@@ -67,8 +66,8 @@
 
         <!-- Message Us -->
         <section id="message-us">
-            <header>
-                <h1>Message Us</h1>
+            <header style="padding-top: 20px;">
+                <h1 style="padding-left: 100px;">Message Us</h1>
             </header>
 
 
@@ -77,29 +76,29 @@
                 <section>
                     <form>
                         <table>
-                            <tr class="input-form" id="nama">
+                            <tr class="input-form">
                                  <td>Nama</td>
                                 <td>:</td>
                                 <td>
                                     <input type="text" name="nama" id="nama" placeholder="Nama" style="width: 433px;">
                                  </td>
                             </tr>
-                            <tr class="input-form" id="tgl_lahir">
+                            <tr class="input-form">
                                 <td>Tanggal Lahir</td>
                                 <td>:</td>
                                 <td>
-                                    <input type="date" name="tgl_lahir" id="tgl_lahir" placeholder="dd/mm/year" style="width: 435px;">
+                                    <input required="true" type="date" name="tgl_lahir" id="tgl_lahir" placeholder="dd/mm/year" style="width: 435px;">
                                 </td>
                             </tr>
-                            <tr class="input-form" id="jkel">
+                            <tr class="input-form">
                                 <td>Jenis Kelamin</td>
                                 <td>:</td>
                                 <td>
-                                    <input type="radio" name="jkel" id="laki-laki" class="laki-laki">Laki-laki
-                                    <input type="radio" name="jkel" id="perempuan" class="perempuan">Perempuan
+                                    <input required="true" type="radio" name="gender" id="laki-laki" value="Laki-laki">Laki-laki
+                                    <input required="true" type="radio" name="gender" id="perempuan" value="Perempuan">Perempuan
                                 </td>
                             </tr>
-                            <tr class="input-form" id="pesan">
+                            <tr class="input-form">
                                 <td>Pesan</td>
                                 <td>:</td>
                                 <td>
@@ -107,14 +106,18 @@
                                 </td>
                             </tr>
                         </table>
-                        <input type="submit" value="Submit" style="width: 99%;">
+                        <input id="submit" type="submit" value="Submit" style="width: 99%;">
                     </form>
                 </section>
 
                 <!-- Result -->
                 <section class="result-container">
                     <div class="form-result">
-
+                        <h3>Current time: <span id="current-time"></span></h3>
+                        <p><strong>Nama:</strong> <span id="display-nama"></span></p>
+                        <p><strong>Tanggal Lahir:</strong> <span id="display-tanggal"></span></p>
+                        <p><strong>Jenis Kelamin:</strong> <span id="display-kelamin"></span></p>
+                        <p><strong>Pesan:</strong> <span id="display-pesan"></span></p>
                     </div>
                 </section>
 
@@ -126,6 +129,7 @@
     <footer>
 
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
