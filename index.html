@@ -8,13 +8,17 @@
 </head>
 
 <body>
+    <!-- Navigation Bar -->
     <nav>
         <div class="logo-icon">
-
+            <img src="assets\logo.png" style="height: 50px; width: 50px; border-radius: 50%;" >
+        </div>
+        <div class="title">
+            <h1>| Your world, captured beautifully.</h1>
         </div>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#facilitation">Our Profile</a></li>
+            <li><a href="#OurProfile">Our Profile</a></li>
             <li><a href="#">Achievement</a></li>
             <li><a href="#message-us">Message Us</a></li>
         </ul>
@@ -22,42 +26,71 @@
 
     <section class="section-container">
         <!-- Home -->
-        <section id="home">
+        <section id="home" style="display: flex; flex-direction: column;">  
             <header>
-                <h1> Hi <span id="name">Joseph</span>,  Welcome To Website</h1>
-                <p>ini adalah website latihan pertama...</p>
+                <h1> Hi <span id="name">Visitor</span>, Welcome To ScenicSnap</h1>
+                <p>Kami hadir untuk memperlengkapi dirimu dengan kemampuan dalam dunia fotografi.</p>
             </header>
 
             <article>
                 <div class="banner-container">
-
+                    <img 
+                        class="img-slideshow" 
+                        src="https://gtwallpaper.org/sites/default/files/styles/1920x1080/public/wallpaper/159435/a-4k-beautiful-scenery-wallpapers-159435-3005-3786187.png?itok=7uFz2jXC"
+                    />
+                    <img 
+                        class="img-slideshow" 
+                        src="https://gtwallpaper.org/sites/default/files/styles/1920x1080/public/wallpaper/159435/a-4k-beautiful-scenery-wallpapers-159435-2994-6551673.png?itok=OadZTCNQ"
+                    />
+                    <img 
+                        class="img-slideshow" 
+                        src="https://gtwallpaper.org/sites/default/files/wallpaper/159435/a-4k-beautiful-scenery-wallpapers-159435-2985-5744171.png"
+                    />
                 </div>
             </article>
         </section>
 
         <hr>
 
-        <!-- Our Facilities -->
-        <section id="facilitation">
+        <!-- Profile -->
+        <section id="OurProfile" style="display: flex; flex-direction: column;">
             <header>
-                <h1>Our Facilitation</h1>
+                <h1>Tentang Kami</h1>
             </header>
 
             
-            <article class="facility-list">
-                <div style="text-align: center;">
-                    <div style="width: 50px; height: 50px; border: 1px solid black; border-radius: 50%;"></div>
-                    <h5>Teacher</h5>
+            <article class="about">
+                <div>
+                    <p> ScenicSnap adalah platform komunitas daring yang didedikasikan untuk fotografi pemandangan, menyediakan ruang bagi para fotografer 
+                        dari semua tingkatan untuk menjelajahi, <br> berbagi, dan merayakan keindahan dunia melalui lensa mereka. 
+                        Dengan perangkat pengeditan yang kuat dan antarmuka intuitif, pengguna dapat mengubah tangkapan <br> mentah menjadi 
+                        mahakarya visual yang menakjubkan. Lebih dari sekadar platform, ScenicSnap mendorong 
+                        komunitas global yang saling menginspirasi, berbagi pengalaman, <br> dan 
+                        mempromosikan praktik fotografi yang bertanggung jawab untuk melestarikan keajaiban alam yang kita abadikan.
+                    </p>
+                </div> 
+            </article>
+
+            <!-- Visi dan Misi -->
+            <article class="profile">
+                <div>
+                    <div>
+                        <h2>Visi</h2>
+                        <ul>
+                            li>Untuk menginspirasi dan memberdayakan individu untuk menemukan, mengabadikan, dan berbagi keindahan dunia di sekitar mereka.</li>
+                        </ul>
+                    </div>
                 </div> 
 
-                <div style="text-align: center;">
-                    <div style="width: 50px; height: 50px; border: 1px solid black; border-radius: 50%;"></div>
-                    <h5>Hayoyoyo</h5>
-                </div> 
-
-                <div style="text-align: center;">
-                    <div style="width: 50px; height: 50px; border: 1px solid black; border-radius: 50%;"></div>
-                    <h5>Wadidaw</h5>
+                <div>
+                    <div>
+                        <h2>Misi</h2>>
+                        <ol>
+                            <li>Kami berusaha menciptakan sebuah platform yang memupuk komunitas global para fotografer dan penggemar, menghubungkan mereka melalui hasrat mereka akan fotografi pemandangan.</li>
+                            <li>Kami menyediakan perangkat dan sumber daya berkualitas tinggi yang ramah pengguna untuk meningkatkan pengalaman fotografi dan memungkinkan pengguna memamerkan karya mereka dengan bangga.</li>
+                            <li>Kami secara aktif mempromosikan praktik fotografi yang bertanggung jawab dan berkelanjutan, mendorong pengguna kami untuk menghormati dan melestarikan lingkungan alam yang mereka abadikan.</li>
+                        </ol>
+                    </div>
                 </div>     
             </article>
         </section>
@@ -65,48 +98,69 @@
         <hr>
 
         <!-- Message Us -->
-        <section id="message-us">
-            <header style="padding-top: 20px;">
-                <h1 style="padding-left: 100px;">Message Us</h1>
+        <section id="message-us" style="display: flex; flex-direction: column;">
+            <header style="padding-top: 20px; display: flex; padding-bottom: 10px;">
+                <h1>Message Us</h1>
+                <h5 class="thanks-message">
+                    Terima Kasih! Pesanmu kami terima dengan baik.
+                </h5>
             </header>
-
+            
+            <hr style="border-style: groove;">
 
             <section class="section-message-us">
                 <!-- Form -->
                 <section>
                     <form>
                         <table>
-                            <tr class="input-form">
-                                 <td>Nama</td>
+                            <tr>
+                                <td>Nama</td>
                                 <td>:</td>
                                 <td>
-                                    <input type="text" name="nama" id="nama" placeholder="Nama" style="width: 433px;">
-                                 </td>
+                                    <input type="text" name="nama" id="inputnama" placeholder="Masukkan Nama Lengkap" style="width: 433px;">
+                                </td>
                             </tr>
-                            <tr class="input-form">
+                            <tr>
+                                <td>Email</td>
+                               <td>:</td>
+                               <td>
+                                   <input autocomplete="off" required="true" type="email" name="email" id="inputemail" placeholder="Masukkan Email Anda" style="width: 433px;">
+                               </td>
+                           </tr>
+                           <tr>
+                            <td>No. Telepon</td>
+                           <td>:</td>
+                           <td>
+                               <input required="true" type="tel" name="notelp" id="inputnotelp" placeholder="Masukkan Nomor Telepon Anda" style="width: 433px;">
+                            </td>
+                       </tr>
+                            <tr>
                                 <td>Tanggal Lahir</td>
                                 <td>:</td>
                                 <td>
-                                    <input required="true" type="date" name="tgl_lahir" id="tgl_lahir" placeholder="dd/mm/year" style="width: 435px;">
+                                    <input type="date" name="tgl_lahir" id="inputtgllahir" placeholder="dd/mm/year" style="width: 435px;">
                                 </td>
                             </tr>
-                            <tr class="input-form">
+                            <tr>
                                 <td>Jenis Kelamin</td>
                                 <td>:</td>
                                 <td>
-                                    <input required="true" type="radio" name="gender" id="laki-laki" value="Laki-laki">Laki-laki
-                                    <input required="true" type="radio" name="gender" id="perempuan" value="Perempuan">Perempuan
+                                    <input required="true" type="radio" name="gender" id="inputgendermale" value="Laki-laki">Laki-laki
+                                    <input required="true" type="radio" name="gender" id="inputgenderfemale" value="Perempuan">Perempuan
                                 </td>
                             </tr>
-                            <tr class="input-form">
+                            <tr>
                                 <td>Pesan</td>
                                 <td>:</td>
                                 <td>
-                                    <textarea type="text" name="pesan" id="pesan" placeholder="Pesan" style="width: 432px; height: 100px; resize: none;" ></textarea>
+                                    <textarea type="text" name="pesan" id="inputpesan" placeholder="Pesan" style="width: 432px; height: 100px; resize: none;" ></textarea>
                                 </td>
                             </tr>
                         </table>
-                        <input id="submit" type="submit" value="Submit" style="width: 99%;">
+                        <br>
+                        <br>
+                        <br>
+                        <button type="button" onclick="formValidation()" id="submit" value="Submit" style="width: 123.5%;">Submit</button>
                     </form>
                 </section>
 
@@ -115,20 +169,23 @@
                     <div class="form-result">
                         <h3>Current time: <span id="current-time"></span></h3>
                         <p><strong>Nama:</strong> <span id="display-nama"></span></p>
+                        <p><strong>Email:</strong> <span id="display-email"></span></p>
+                        <p><strong>No. Telepon:</strong> <span id="display-notelp"></span></p>
                         <p><strong>Tanggal Lahir:</strong> <span id="display-tanggal"></span></p>
                         <p><strong>Jenis Kelamin:</strong> <span id="display-kelamin"></span></p>
                         <p><strong>Pesan:</strong> <span id="display-pesan"></span></p>
                     </div>
                 </section>
-
             </section>
         </section>
     </section>
 
-
+    <!-- Footer -->
     <footer>
-
+        <hr>
+        <p> ScenicSnap 20xx</p>
     </footer>
+
     <script src="js/script.js"></script>
 </body>
 
