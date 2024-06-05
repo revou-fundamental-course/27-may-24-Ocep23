@@ -104,20 +104,26 @@ header > h1{
 .about {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     padding-top: 90px;
     padding-bottom: -100px;
 }
 .about > div {
     text-align: justify;
     margin-top: -110px;
+    margin-left: -100px;
 }
 .profile {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-bottom: 100px;
-    padding-top: px;
     padding-bottom: -100px;
+}
+.profile > div {
+    height: 200px;
+    width: 600px;
+    text-align: justify;
+    margin-left: 50px;
 }
 .section-message-us {
     display: flex;
