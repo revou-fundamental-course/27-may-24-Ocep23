@@ -157,6 +157,12 @@ header > h1{
     display: flex;
     flex-direction: column;
 }
+.length{
+    width: 433px;
+}
+.button-length {
+    width: 123.5%;
+}
 form {
     display: flex;
     padding-left: 30px;
@@ -194,13 +200,15 @@ footer > p {
         margin-bottom: 14px;
     }
     .logo-icon {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
         margin: 0;
         margin-top: 14px;
         margin-bottom: 10px;
         height: 50px;
         width: 50px;
-        align-items: center;
+        width: 100%;
     }
     .title {
         display: none;
@@ -208,10 +216,9 @@ footer > p {
     nav ul {
         flex-direction: column;
         width: 100%;
+        margin: 0;;
         padding: 0;
-        margin: 0;
-        border: 0px solid black;
-       
+        border: 0;   
     }
     nav li {
         flex-direction: column;
@@ -224,4 +231,218 @@ footer > p {
         flex-direction: column;
         margin: 0;
     }
+    nav li a:hover {
+        background-color: #334eac;
+    }
+    hr {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: auto;
+        object-fit: contain;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .section-header {
+        background-color: #fff9f0;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: auto;
+        object-fit: contain;
+    }
+    .sectiontiga-header {
+        background-color: #edf1f6;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: auto;
+        object-fit: contain;
+    }
+    .section-container {
+        background-color: #edf1f6;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: auto;
+        object-fit: contain;
+    }
+    .banner-container {
+        display: flex;
+        flex-direction: column;
+        width: 1366px;
+        margin-left: 0;
+        margin-bottom: 120px;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: auto;
+        object-fit: contain;
+    }
+    .banner-container > img {
+        width: 1366px;
+        height: 578px;
+        animation: alternate;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: auto;
+        object-fit: contain;
+    }
+    .about {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px;
+        padding-top: 90px;
+        padding-bottom: -100px;
+        background-color: #fff9f0;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: auto;
+        object-fit: contain;
+    }
+    .about > div {
+        text-align: justify;
+        margin-top: -130px;
+        margin-left: 0;
+        width: 85%;
+        height: 100%;
+        max-width: 100%;
+        max-height: auto;
+        object-fit: contain;
+    }
+    .profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: 100px;
+        padding-bottom: -100px;
+        width: 80%;
+        height: 100%;
+        max-width: 100%;
+        max-height: auto;
+        object-fit: contain;
+    }
+    .profile > div {
+        height: 200px;
+        width: 600px;
+        text-align: justify;
+        margin-left: 50px;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: auto;
+        object-fit: contain;
+    }
+    .section-message-us {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-top: 20px;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: auto;
+        object-fit: contain;
+    }
+    .thanks-message {
+        display: none;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: large;
+        flex: 1;
+        margin: 0;
+        margin-top: 20px;
+        width: 40%;
+        height: 100%;
+        max-width: 100%;
+        max-height: auto;
+        object-fit: contain;
+    }
+    .result-container {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        margin-left: 2px;
+        height: 100%;
+        max-width: 100%;
+        max-height: auto;
+        object-fit: contain;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        padding-top: 50px;
+        margin-right: 100px;
+        height: 400px;
+        width: 90%;
+        height: 100%;
+        max-width: 100%;
+        max-height: auto;
+        object-fit: contain;
+    }
+    form > table tr, td{
+        column-width: auto;
+    }
+    .length{
+        width: 433px;
+    }
+    .button-length {
+        width: 100%;
+    }
+    .form-result {
+        height: 310px;
+        border: 1px solid;
+        margin-left: 0px; 
+        margin-right: 30px;
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: auto;
+        object-fit: contain;
+        margin-left: 2px;
+    }
+    footer {
+        background-color: #d0e3ff;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: auto;
+        object-fit: contain;
+    }
+    footer > p {
+        text-align: end;
+        padding-right: 70px;
+        padding-top: 15px;
+        margin-bottom: 30px;
+        width: 98%;
+        height: 100%;
+        max-width: 100%;
+        max-height: auto;
+        object-fit: contain;
+     }
+     footer > hr {
+        margin: 0  ;
+        border: 1px solid;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: auto;
+        object-fit: contain;
+     }
 }
